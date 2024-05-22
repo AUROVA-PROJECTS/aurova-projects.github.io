@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Group of Automation, Robotics and Computer Vision (AUROVA) main webpage">
-  <meta property="og:title" content="Group of Automation, Robotics and Computer Vision (AUROVA)"/>
-  <meta property="og:description" content="AUROVA webpage with the publications, projects and researchers"/>
-  <meta property="og:url" content="https://aurova-projects.github.io/"/>
+  <meta name="description" content="Projects, publications, papers, conferences, journals of Automation, Robotics and Computer Vision (AUROVA)">
+  <meta property="og:title" content="AUROVA projects"/>
+  <meta property="og:description" content="Publications, papers, conferences, journals of Automation, Robotics and Computer Vision (AUROVA)"/>
+  <meta property="og:url" content="https://aurova-projects.github.io/publications/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/images/logoAUROVA.png" />
   <meta property="og:image:width" content="840"/>
@@ -40,125 +40,154 @@
 <body>
 
 
-  <header class="hero is-small" style="background-color:rgb(255, 148, 27);">
+  <header class="hero is-small">
     <div class="hero-body">
-          <a href="index.html"><img src="static/images/logoAUROVA.png" alt="Logo AUROVA" class="left"  width="350px"/></a>
-          <img src="static/images/logo-ua.png" alt="Logo UA" class="right"  width="400px"/>
-  
-          <div class="header_menu">
-            <a href="projects/index.html" target="_self">Projects</a>&emsp;
-            <a href="publications/index.html" target="_self">Publications</a>&emsp;
-            <a href="researchers/index.html" target="_self">Researchers</a>
-          </div>
-          
-    </div>
-  </header>
-
-<!-- Header for other page repositories
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-<header class="hero is-small" style="background-color:rgb(255, 148, 27);">
-  <div class="hero-body">
-        <a href="https://aurova-projects.github.io/"><img src="static/images/logoAUROVA.png" alt="Logo AUROVA" class="left"  width="20%"/></a>
+      <div class="container">
+        <a href="index.html"><img src="static/images/logoAUROVA.png" alt="Logo AUROVA" class="left"  width="20%"/></a>
         <img src="static/images/logo-ua.png" alt="Logo UA" class="right"  width="25%"/>
-
-        <div class="header_menu">
-          <a href="https://aurova-projects.github.io/projects.html" target="_self">Projects &emsp;</a>
-          <a href="https://aurova-projects.github.io/publications.html" target="_self">Publications &emsp;</a>
-          <a href="https://aurova-projects.github.io/researchers.html" target="_self">Researchers</a>
-        </div>
-        
-  </div>
-</header>
--->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="carousel results-carousel">
-        <div class="item">
-            <img src="static/images/CARLA_simulation.png" alt="GIF pedestrian tracking" class="center" style="width:auto;height:500px;"/>
-        </div>
-        <div class="item">
-          <img src="static/images/Follow1_alltrackers_compress.gif" alt="GIF pedestrian tracking" class="center" style="width:auto;height:500px;"/>
-      </div>
-      </div>
+      </div>  
     </div>
-  </div>
-</section>
+    <div class="hline"></div>
+  </header>
 
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-          <p><strong> Automation, Robotics and Computer Vision (AUROVA) Group</strong> is a research team of University of Alicante (UA). The group is dedicated to
-          exploring intelligent techniques applied to robotic manipulation and autonomous robots. Our research encompasses a wide range of topics including, but not limited to:</p>
-          <details>
-            <summary class="summary-box"><strong>Intelligent robotic manipulation.</strong></summary>
-            <div class="container-topics">
-              <img src="static/images/ur5.png" alt="Robotic arm"/>
-              <ul class="ul-box">
-                <li>Detection of the grasp points with vision techniques.</li>
-                <li>Analysis of the grasp stability and slip detection.</li>
-                <li>Grasping and manipulation based on Reinforcement Learning.</li>
-                <li>Recognition with tactile sensors.</li>
-              </ul>
-            </div>
-          </details>
+      <p style="font-size: 30px; text-align: center; color: black;">Projects</p>
+      <div class="container">
+        <!-- List of publications (add news in chronologic order, latest first)
+            copy/paste the publication_block "div", reference it to its GitHub project page if possible. -->
+        <div class="publication_block"> 
+          <a href="https://aurova-projects.github.io/geo-localization_weighted/" target="_blank">Geo-Localization Based on Dynamically Weighted Factor-Graph</a>
+          <div>
+            <!-- Paper authors -->
+            <span class="author-block">
+              Miguel Ángel Muñoz-Bañón,
+            </span>
+            <span class="author-block">
+              Alejandro Olivas,
+            </span>
+            <span class="author-block">
+              Edison Velasco-Sánchez,
+            </span>
+            <span class="author-block">
+              Francisco A. Candelas,
+            </span>
+            <span class="author-block">
+              Fernando Torres
+            </span>
+          </div>
+          <div>
+            <span class="author-block">IEEE Robotics and Automation Letters + 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</span>
+          </div> 
+        </div>
+        <br>
 
-          <details>
-            <summary class="summary-box"><strong>Autonomous mobile robots.</strong></summary>
-              <div class="container-topics">
-                <img src="static/images/blue.jpg" alt="Mobile robot"/>
-                <ul class="ul-box">
-                  <li>Navigation in outdoor environments.</li>
-                  <li>Navigation in dynamic and unstructured environments.</li>
-                  <li>Localization based on geo-referrenced maps.</li>
-                  <li>LiDAR odometry.</li>
-                  <li>Human-robot interaction.</li>
-                </ul>
-              </div>
-          </details>
+        <div class="publication_block"> 
+          <a href="https://aurova-projects.github.io/tracker_fusion/" target="_blank">Robust Single Object Tracking and Following by Fusion Strategy</a>
+          <div>
+            <!-- Paper authors -->
+            <span class="author-block">
+              Alejandro Olivas,
+            </span>
+            <span class="author-block">
+              Miguel Ángel Muñoz-Bañón,
+            </span>
+            <span class="author-block">
+              Edison Velasco-Sánchez,
+            </span>
+            <span class="author-block">
+              Fernando Torres
+            </span>
+          </div>
+          <div>
+            <span class="author-block">International Conference on Informatics in Control, Automation and Robotics (ICINCO) 2023</span>
+          </div> 
+        </div>
+        <br>
+
+        <div class="publication_block"> 
+          <a href="https://aurova-projects.github.io/geo-localization_self-tunning/" target="_blank">Robust Self-Tuning Data Association for Geo-Referencing Using Lane Markings</a>
+          <div>
+            <!-- Paper authors -->
+            <span class="author-block">
+              Miguel Ángel Muñoz-Bañón,
+            </span>
+            <span class="author-block">
+              Jan-Hendrik Pauls,
+            </span>
+            <span class="author-block">
+              Haohao Hu,
+            </span>
+            <span class="author-block">
+              Christoph Stiller,
+            </span>
+            <span class="author-block">
+              Francisco A. Candelas,
+            </span>
+            <span class="author-block">
+              Fernando Torres
+            </span>
+          </div>
+          <div>
+            <span class="author-block">IEEE Robotics and Automation Letters + 2023 IEEE International Conference on Robotics and Automation (ICRA)</span>
+          </div> 
+        </div>
+        <br>
+
+        <div class="publication_block"> 
+          <a href="https://aurova-projects.github.io/osm_path_planning/" target="_blank">OpenStreetMap-Based Autonomous Navigation With LiDAR Naive-Valley-Path Obstacle Avoidance</a>
+          <div>
+            <!-- Paper authors -->
+            <span class="author-block">
+              Miguel Ángel Muñoz-Bañón,
+            </span>
+            <span class="author-block">
+              Edison Velasco-Sánchez,
+            </span>
+            <span class="author-block">
+              Francisco A. Candelas,
+            </span>
+            <span class="author-block">
+              Fernando Torres
+            </span>
+          </div>
+          <div>
+            <span class="author-block">IEEE Transactions on Intelligent Transportation Systems</span>
+          </div> 
+        </div>
+        <br>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-<strong>Contact Information</strong>
 
-<p>For inquiries or collaboration opportunities, please contact Fernando Torres Medina at <a href="mailto:fernando.torres@ua.es">fernando.torres@ua.es</a>.</p>
 
-<p>Thank you for your interest in AUROVA. We look forward to collaborating with you and making meaningful contributions to robotics.</p>
-
+  <footer class="footer">
+    <div class="center">
+  
+            <a href="http://www.aurova.ua.es/" target="_blank"
+              class="external-link button is-normal is-dark" style="margin-right: 15px;">
+              <span class="icon">
+                <img src="static/images/favicon.ico" alt="AUROVA"/>
+              </span>
+            </a>
+  
+            <a href="https://github.com/AUROVA-LAB/" target="_blank"
+              class="external-link button is-normal is-dark" style="margin-right: 15px;">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+  
+            <a href="https://www.youtube.com/channel/UCdvrdxJmwsuiLrLtZ8XDWZw" target="_blank"
+              class="external-link button is-normal is-dark">
+              <span class="icon">
+                <i class="fab fa-youtube"></i>
+              </span>
+            </a>   
+  
     </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="center">
-
-          <a href="http://www.aurova.ua.es/" target="_blank"
-            class="external-link button is-normal is-dark" style="margin-right: 15px;">
-            <span class="icon">
-              <img src="static/images/favicon.ico" alt="AUROVA"/>
-            </span>
-          </a>
-
-          <a href="https://github.com/AUROVA-LAB/" target="_blank"
-            class="external-link button is-normal is-dark" style="margin-right: 15px;">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-          </a>
-
-          <a href="https://www.youtube.com/channel/UCdvrdxJmwsuiLrLtZ8XDWZw" target="_blank"
-            class="external-link button is-normal is-dark">
-            <span class="icon">
-              <i class="fab fa-youtube"></i>
-            </span>
-          </a>   
-
-  </div>
-</footer>
+  </footer>
 
 <!-- Statcounter tracking code -->
   

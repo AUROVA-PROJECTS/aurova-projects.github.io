@@ -161,22 +161,23 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 55px;
-  margin-bottom: -65px;
+  margin-bottom: -10px;
   width: attr(width);
   text-align: center;
-  font-family: 'Cinzel', serif;
-  font-size: 30px;
-  font-weight: 600;
+  font-family: "EB Garamond", serif;
+  font-size: 32px;
+  font-weight: 350;
   font-style: normal;
 }
 
 .header_menu a {
   position:relative;
+  color:#000000;
 }
 
-.header_menu a:hover {
-  color:#086ada;;
-}
+/* .header_menu a:hover {
+  color:#0087ca;
+} */
 
 .header_menu a::after {
   content: '';
@@ -186,7 +187,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #161616;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

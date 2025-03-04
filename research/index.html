@@ -33,7 +33,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-    <script defer src="../static/js/fontawesome.all.min.js"></script>
+    <script src="../static/js/fontawesome.all.min.js"></script>
     <script src="../static/js/bulma-carousel.min.js"></script>
     <script src="../static/js/bulma-slider.min.js"></script>
     <script src="../static/js/index.js"></script>
@@ -62,13 +62,13 @@
 
     <section class="hero">
         <div class="hero-body">
-            <p style="font-size: 30px; text-align: center; color: black;">Autonomous Mobile Robots</p>
-            <div class="container">
+            <div class="container research_container">
+                <p class="research_title">Autonomous Mobile Robots</p>
                 <div class="research_block">
-                    <img src="images/Blue_2024.png" alt="BLUE" class="research_image" width="33%">
+                    <img src="images/Blue_2024.png" alt="BLUE" class="research_image" width="25%">
                     <div class="research_text">
-                        <ul type="dot">
-                            <li>Autonomous navigation in outdoor environments.</li>
+                        <ul>
+                            <li>Autonomous navigation in outdoor environments</li>
                             <li>Feature-based geo-Localization</li>
                             <li>LiDAR odometry</li>
                             <li>Visual control</li>
@@ -76,7 +76,9 @@
                         </ul>
                     </div>
                 </div>
-                <button class="dropdown_button" onclick="toggleDropdown('dropdown1')">Show Publications</button>
+                <button class="dropdown_button" onclick="toggleDropdown('dropdown1', 'dropdown_button1')">
+                    <i id="dropdown_button1" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
+                </button>
                 <div id="dropdown1" class="dropdown_content">
                     <!-- List of publications (add news in chronologic order, latest first)
             copy/paste the publication_block "div", reference it to its GitHub project page if possible. -->
@@ -157,15 +159,23 @@
 
     <section class="hero">
         <div class="hero-body">
-            <p style="font-size: 30px; text-align: center; color: black;">Intelligent manipulation</p>
-            <div class="container">
+            
+            <div class="container research_container">
+                <p class="research_title">Intelligent manipulation</p>
                 <div class="research_block">
-                    <img src="images/Blue_2024.png" alt="BLUE" class="research_image" width="33%">
+                    <img src="images/Blue_2024.png" alt="BLUE" class="research_image" width="25%">
                     <div class="research_text">
-                        <p>Item list of research</p>
+                        <ul>
+                            <li>Grasp stability</li>
+                            <li>Tactile senssing</li>
+                            <li>Reinforcement Learning</li>
+                            <li>Cooperative manipulation</li>
+                        </ul>
                     </div>
                 </div>
-                <button class="dropdown_button" onclick="toggleDropdown('dropdown2')">Show Publications</button>
+                <button class="dropdown_button" onclick="toggleDropdown('dropdown2', 'dropdown_button2')">
+                    <i id="dropdown_button2" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
+                </button>
                 <div id="dropdown2" class="dropdown_content">
                     <!-- List of publications (add news in chronologic order, latest first)
             copy/paste the publication_block "div", reference it to its GitHub project page if possible. -->
@@ -258,12 +268,17 @@
     <!-- End of Statcounter Code -->
 
     <script>
-        function toggleDropdown(id) {
+        function toggleDropdown(id, id_button) {
             var dropdown = document.getElementById(id);
+            var button = document.getElementById(id_button);
             if (dropdown.style.display === "none" || dropdown.style.display === "") {
                 dropdown.style.display = "block";
+                button.classList.remove('fa-angle-double-down');
+                button.classList.add('fa-angle-double-up');
             } else {
                 dropdown.style.display = "none";
+                button.classList.remove('fa-angle-double-up');
+                button.classList.add('fa-angle-double-down');
             }
         }
     </script>

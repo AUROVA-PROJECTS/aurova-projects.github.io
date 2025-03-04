@@ -1,3 +1,18 @@
+.research_container {
+    border: 1px solid rgb(199, 209, 253);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    border-width: 2px;
+}
+
+.research_title {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
 .research_block {
     display: flex;
     align-items: center;
@@ -21,19 +36,59 @@
  }
   
 .dropdown_button {
-    background-color: #4CAF50;
+    background-color: rgb(199, 209, 253);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0px;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    width: 100%;
+    text-align: center;
 }
-  
+
+.dropdown_button i {
+    font-size: 20px;
+}
+
 .dropdown_button:hover {
-    background-color: #45a049;
+    background-color: rgb(163, 177, 238);
 }
   
 .dropdown_content {
     display: none;
     margin-top: 10px;
 }
+
+.publication_block {
+    text-align: left;
+    border-left:3px solid #dbdbdb;
+    font-size:16px;
+    padding-left: 10px;
+  }
+  
+  .publication_block a {
+    position:relative;
+    font-size:20px;
+  }
+  
+  .publication_block a:hover {
+    color:#086ada;;
+  }
+  
+  .publication_block a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .publication_block a:hover::after{ 
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

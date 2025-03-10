@@ -152,7 +152,7 @@ body {
 
 .right {
   display: "";
-  float: right;
+  float: inline-end;
   width: attr(width);
 }
 
@@ -330,4 +330,8 @@ details > summary::-webkit-details-marker {
   border-bottom:2px solid #000000;
   width: 75%; 
   margin: auto;
+}
+
+ol > li::marker {
+  font-weight: bold;
 }

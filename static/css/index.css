@@ -145,15 +145,19 @@ body {
 }
 
 .left {
-  display: "";
+  display: block;
   float: left;
   width: attr(width);
+  max-width: 300px;
+  margin-left: -20px;
 }
 
 .right {
-  display: "";
+  display: block;
   float: inline-end;
   width: attr(width);
+  max-width: 30%;
+  margin-right: -22px;
 }
 
 .header_menu {
@@ -197,7 +201,7 @@ body {
   transform-origin: bottom left;
 }
 
-@media screen and (max-width: 1500px) {
+/* @media screen and (max-width: 1500px) {
   .header_menu {
     margin-top: 55px;
     margin-bottom: -10px;
@@ -241,7 +245,7 @@ body {
   .right {
     min-width: 45%;
   }
-}
+} */
 
 .footer{
   background-color: rgb(199, 209, 253);

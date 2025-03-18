@@ -136,6 +136,22 @@ body {
   font-size: smaller;
 }
 
+.header_menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  width: 75%;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 32px;
+  font-weight: 350;
+  font-style: normal;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -144,46 +160,49 @@ body {
   text-align: center;
 }
 
-.left {
-  display: block;
-  float: left;
-  width: attr(width);
-  max-width: 300px;
-  margin-left: -20px;
-}
-
-.right {
-  display: block;
-  float: inline-end;
-  width: attr(width);
-  max-width: 30%;
-  margin-right: -22px;
-}
-
-.header_menu {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 55px;
-  margin-bottom: -10px;
-  width: attr(width);
-  text-align: center;
-  font-family: "EB Garamond", serif;
-  font-size: 32px;
-  font-weight: 350;
-  font-style: normal;
-}
 
 .header_menu a {
-  position:relative;
-  color:#000000;
+  display: inline-block; /* Ensures links only take up the space of their content */
+  max-width: 30%;
 }
 
-/* .header_menu a:hover {
-  color:#0087ca;
-} */
+.header_index a.home {
+  display: inline-flex;
+  position: relative;
+  color: #000000;
+  transition: background-color 0.25s ease-out;
+  border-radius: 8px;
+}
 
-.header_menu a::after {
+.header_index a.home:hover {
+  background-color: rgb(199, 209, 253); /* Change background color on hover */
+  border-radius: 8px;
+}
+
+.header_index a.home:hover::after{ 
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.header_index {
+  display: flex;
+  margin-top: 20px;
+}
+
+.header_index a {
+  display: inline-flex;
+  position:relative;
+  color:#000000;
+  
+}
+
+.header_image {
+  display: block;
+  height: auto;
+  margin-top: -15px;
+}
+
+.header_index a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -196,9 +215,21 @@ body {
   transition: transform 0.25s ease-out;
 }
 
-.header_menu a:hover::after{ 
+.header_index a:hover::after{ 
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@media (max-width: 1300px) {
+  .header_index {
+      font-size: 26px; /* Limit max font size */
+  }
+}
+
+@media (max-width: 800px) {
+  .header_index {
+      font-size: 20px; /* Limit max font size */
+  }
 }
 
 /* @media screen and (max-width: 1500px) {

@@ -60,10 +60,20 @@
 
     <section class="hero">
         <div class="hero-body">
-            <div class="container research_container">
+            <div class="research_menu">
+                <a href="#autonomous_mobile_robots" >Autonomous Mobile Robots</a>
+                <a href="#intelligent_manipulation" >Intelligent Manipulation</a>
+                <a href="#theses">Theses</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container research_container" id="autonomous_mobile_robots">
                 <p class="research_title">Autonomous Mobile Robots</p>
                 <div class="research_block">
-                    <img src="images/Blue_2024.png" alt="BLUE" class="research_image" width="25%">
+                    <img src="images/Blue_2024.png" alt="BLUE" class="research_image" width="25%">&emsp;
                     <div class="research_text">
                         <ul>
                             <li>Autonomous navigation in outdoor environments</li>
@@ -73,13 +83,11 @@
                             <li>Human-robot interaction</li>
                         </ul>
                     </div>
+                    <img src="images/Figure4-concept.png" alt="BLUE concept" class="research_image" width="30%">
                 </div>
-                <button class="dropdown_button" onclick="toggleDropdown('dropdown1', 'dropdown_button1')">
-                    <i id="dropdown_button1" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
-                </button>
                 <div id="dropdown1" class="dropdown_content">
                     <!-- List of publications (add news in chronologic order, latest first)
-            copy/paste the publication_block "div", reference it to its GitHub project page if possible. -->
+                        copy/paste the publication_block "div", reference it to its GitHub project page if possible. -->
                     <div class="publication_block">
                         <a href="https://aurova-projects.github.io/geo-localization_weighted/"
                             target="_blank">Geo-Localization Based on Dynamically Weighted Factor-Graph</a>
@@ -152,16 +160,19 @@
                     <br>
 
                 </div>
+                <button class="dropdown_button" onclick="toggleDropdown('dropdown1', 'text1', 'icon1_1', 'icon1_2')">
+                    <i id="icon1_1" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
+                    <span id="text1">Show more</span> <i id="icon1_2" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
+                </button>
             </div>
-    </section>
 
-    <section class="hero">
-        <div class="hero-body">
-            
-            <div class="container research_container">
-                <p class="research_title">Intelligent manipulation</p>
+
+            <!------------->
+            <br>
+            <div class="container research_container" id="intelligent_manipulation">
+                <p class="research_title">Intelligent Manipulation</p>
                 <div class="research_block">
-                    <img src="images/Blue_2024.png" alt="BLUE" class="research_image" width="25%">
+                    <img src="images/lin02-manipula1.jpg" alt="Grasping" class="research_image" width="25%">&emsp;
                     <div class="research_text">
                         <ul>
                             <li>Grasp stability</li>
@@ -171,9 +182,6 @@
                         </ul>
                     </div>
                 </div>
-                <button class="dropdown_button" onclick="toggleDropdown('dropdown2', 'dropdown_button2')">
-                    <i id="dropdown_button2" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
-                </button>
                 <div id="dropdown2" class="dropdown_content">
                     <!-- List of publications (add news in chronologic order, latest first)
             copy/paste the publication_block "div", reference it to its GitHub project page if possible. -->
@@ -228,8 +236,253 @@
                     <br>
 
                 </div>
+                <button class="dropdown_button" onclick="toggleDropdown('dropdown2', 'text2', 'icon2_1', 'icon2_2')">
+                    <i id="icon2_1" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
+                    <span id="text2">Show more</span> <i id="icon2_2" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
+                </button>
             </div>
+
+            <!--------------->
+            <br>
+
+            <div class="container research_container" id="theses">
+                <p class="research_title">Theses</p>
+
+                <div id="dropdown3" class="dropdown_content">
+                    <!-- List of publications (add news in chronologic order, latest first)
+            copy/paste the publication_block "div", reference it to its GitHub project page if possible. -->
+
+                    <!-- La tesis aún no está en el RUA -->
+                    <!-- <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/131818" target="_blank">Pose Estimation and Control of Mobile Robots on Unstructured Environments</a>
+                        <div>
+                            <span class="author-block"><strong>Edison Velasco-Sánchez</strong>  </span>
+                            <span class="author-block">Directors: Francisco A. Candelas, Santiago T. Puente</span>
+                        </div>
+                        <div>
+                            <span class="author-block">20-11-2024</span>
+                        </div>
+                    </div>
+                    <br> -->
+
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/131818" target="_blank">Autonomous Navigation Based on Geo-Referenced Public Maps </a>
+                        <div>
+                            <!-- Paper authors -->
+                            <span class="author-block"><strong>Miguel Ángel Muñoz-Bañón</strong></span>
+                            <span class="author-block">Directors: Fernando Torres Medina, Francisco A. Candelas Herías</span>
+                        </div>
+                        <div>
+                            <span class="author-block">07-12-2022</span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/119979"
+                            target="_blank">Development of a Complete Autonomous Navigation System Based on GNSS and LiDAR for Ground Robots Operating in Dynamic and Unstructured Environments</a>
+                        <div>
+                            <!-- Paper authors -->
+                            <span class="author-block"><strong>Iván del Pino Bastida</strong></span>
+                            <span class="author-block">Directors: Fernando Torres Medina, Juan Andrade Cetto</span>
+                        </div>
+                        <div>
+                            <span class="author-block">02-09-2021</span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/118217"
+                            target="_blank">Robotic Manipulation Based on Visual and Tactile Perception</a>
+                        <div>
+                            <!-- Paper authors -->
+                            <span class="author-block"><strong>Brayan Stiven Zapata Impata</strong></span>
+                            <span class="author-block">Director: Pablo Gil Vázquez</span>
+                        </div>
+                        <div>
+                            <span class="author-block">17-09-2020</span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/72613"
+                            target="_blank">Tactile Recognition and Control Applied to Deformable Object Manipulation Tasks  </a>
+                        <div>
+                            <!-- Paper authors -->
+                            <span class="author-block"><strong>Ángel Delgado Rodríguez</strong></span>
+                            <span class="author-block">Directors: Fernando Torres Medina, Carlos Alberto Jara Bravo</span>
+                        </div>
+                        <div>
+                            <span class="author-block">27-09-2017</span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/72433"
+                            target="_blank">Dynamic Visual Servoing of Robot Manipulators: Optimal Framework with Dynamic Perceptibility and Chaos Compensation</a>
+                        <div>
+                            <!-- Paper authors -->
+                            <span class="author-block"><strong>Javier Pérez Alepuz</strong></span>
+                            <span class="author-block">Directors: Jorge Pomares Baeza, Gabriel Jesús García Gómez</span>
+                        </div>
+                        <div>
+                            <span class="author-block">01-09-2017</span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/72504"
+                            target="_blank">Embedded Arquitecture in FPGA for Dynamic Visual Control of Robotic Manipulators Based on Image </a>
+                        <div>
+                            <!-- Paper authors -->
+                            <span class="author-block"><strong>Aiman Alabdo</strong></span>
+                            <span class="author-block">Directors: Jorge Pomares Baeza, Gabriel Jesús García Gómez</span>
+                        </div>
+                        <div>
+                            <span class="author-block">04-07-2017</span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/72265"
+                            target="_blank">Geometric Recognition of 3D Objects and Deformation Detection in Robotic Manipulation</a>
+                        <div>
+                            <!-- Paper authors -->
+                            <span class="author-block"><strong>Carlos Manuel Mateo Agulló</strong></span>
+                            <span class="author-block">Directors: Pablo Gil Vázquez, Fernando Torres Medina</span>
+                        </div>
+                        <div>
+                            <span class="author-block">03-07-2017</span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="publication_block">
+                        <a href="http://rua.ua.es/dspace/handle/10045/22770"
+                            target="_blank">Safe Human-Robot Interaction Based on Multi-sensor Fusion and Dexterous Manipulation Planning</a>
+                        <div>
+                            <!-- Paper authors -->
+                            <span class="author-block"><strong>Juan A. Corrales Ramón</strong></span>
+                            <span class="author-block">Directors: Fernando Torres Medina, Francisco A. Candelas Herías</span>
+                        </div>
+                        <div>
+                            <span class="author-block">25-03-2010</span>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/16063" target="_blank">Self-Calibrating Visual-Force Control for Trajectory Tracking in Cooperative Robotic Tasks</a>
+                        <div>
+                            <span class="author-block"><strong>Gabriel Jesús García Gómez</strong></span>
+                            <span class="author-block">Directors: Jorge Pomares Baeza, Fernando Torres Medina</span>
+                        </div>
+                        <div>
+                            <span class="author-block">25-03-2010</span>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/18413" target="_blank">Contributions to constructive and collaborative learning on the Internet. Application to virtual and remote industrial robotics laboratories.</a>
+                        <div>
+                            <span class="author-block"><strong>Carlos A. Jara Bravo</strong></span>
+                            <span class="author-block">Directors: Francisco A. Candelas Herías, Fernando Torres Medina</span>
+                        </div>
+                        <div>
+                            <span class="author-block">22-01-2010</span>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/29216" target="_blank">Strategies for Identifying Occlusions and Monocular Planning for Improved Visual Scene Perception</a>
+                        <div>
+                            <span class="author-block"><strong>Pablo Gil Vázquez</strong></span>
+                            <span class="author-block">Directors: Fernando Torres Medina, Oscar Reinoso García</span>
+                        </div>
+                        <div>
+                            <span class="author-block">17-04-2008</span>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/1600" target="_blank">Cooperative robot-robot and human-robot manipulation. Application to flexible automatic disassembly systems</a>
+                        <div>
+                            <span class="author-block"><strong>Carolina S. Diaz Baca</strong></span>
+                            <span class="author-block">Directors: Fernando Torres Medina, Santiago T. Puente Méndez</span>
+                        </div>
+                        <div>
+                            <span class="author-block">11-10-2007</span>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/18749" target="_blank">Indirect 2D visual control for timeless tracking of trajectories and its application to visual-force control strategies in manipulators</a>
+                        <div>
+                            <span class="author-block"><strong>Jorge Pomares Baeza</strong></span>
+                            <span class="author-block">Director: Fernando Torres Medina</span>
+                        </div>
+                        <div>
+                            <span class="author-block">07-05-2004</span>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/9899" target="_blank">Non-destructive automatic disassembly for component re-use. Application to PC disassembly</a>
+                        <div>
+                            <span class="author-block"><strong>Santiago T. Puente Méndez</strong></span>
+                            <span class="author-block">Director: Fernando Torres Medina</span>
+                        </div>
+                        <div>
+                            <span class="author-block">16-12-2002</span>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/10053" target="_blank">Morphological processing of colour images. Application to geodetic reconstruction</a>
+                        <div>
+                            <span class="author-block"><strong>Francisco Gabriel Ortíz Zamora</strong></span>
+                            <span class="author-block">Director: Fernando Torres Medina</span>
+                        </div>
+                        <div>
+                            <span class="author-block">23-07-2002</span>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="publication_block">
+                        <a href="http://hdl.handle.net/10045/3336" target="_blank">Extending spatio-temporal planning techniques to computer vision systems</a>
+                        <div>
+                            <span class="author-block"><strong>Francisco Andrés Candelas Herías</strong></span>
+                            <span class="author-block">Director: Fernando Torres Medina</span>
+                        </div>
+                        <div>
+                            <span class="author-block">16-11-2001</span>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+                <button class="dropdown_button" onclick="toggleDropdown('dropdown3', 'text3', 'icon3_1', 'icon3_2')">
+                    <i id="icon3_1" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
+                    <span id="text3">Show more</span> <i id="icon3_2" class="fas fa-angle-double-down" style="transform: scaleX(1.5);"></i>
+                </button>
+            </div>
+
+        </div>
     </section>
+
+
 
 
     <footer class="footer">
@@ -266,17 +519,63 @@
     <!-- End of Statcounter Code -->
 
     <script>
-        function toggleDropdown(id, id_button) {
+        document.addEventListener("DOMContentLoaded", function () {
+            // Assign data-index to each publication block
+            document.querySelectorAll('.dropdown_content').forEach(dropdown => {
+                const items = dropdown.querySelectorAll('.publication_block');
+                items.forEach((item, index) => {
+                    item.setAttribute('data-index', index + 1); // Assign data-index starting from 1
+                    if (index >= 2) {
+                        item.style.display = "none"; // Hide all items except the first two
+                    }
+                });
+                const br_items = dropdown.querySelectorAll('br');
+                br_items.forEach((br, index) => {
+                    if (index >= 2) {
+                        br.style.display = "none"; // Hide all items except the first two
+                    }
+                });
+                dropdown.dataset.expanded = "false"; // Set initial state as collapsed
+            });
+        });
+
+        function toggleDropdown(id, id_button, icon1, icon2) {
             var dropdown = document.getElementById(id);
-            var button = document.getElementById(id_button);
-            if (dropdown.style.display === "none" || dropdown.style.display === "") {
-                dropdown.style.display = "block";
-                button.classList.remove('fa-angle-double-down');
-                button.classList.add('fa-angle-double-up');
+            var text = document.getElementById(id_button);
+            var icon1 = document.getElementById(icon1);
+            var icon2 = document.getElementById(icon2);
+            const items = dropdown.querySelectorAll('.publication_block');
+            const br_items = dropdown.querySelectorAll('br');
+            if (dropdown.dataset.expanded === "false") {
+                items.forEach(item => {
+                    item.style.display = "block";
+                });
+                br_items.forEach((br, index) => {
+                    br.style.display = "initial"; 
+                });
+                dropdown.dataset.expanded = "true";
+                [icon1, icon2].forEach(icon => {
+                    icon.classList.remove('fa-angle-double-down');
+                    icon.classList.add('fa-angle-double-up');
+                });
+                text.textContent = " Show less";
             } else {
-                dropdown.style.display = "none";
-                button.classList.remove('fa-angle-double-up');
-                button.classList.add('fa-angle-double-down');
+                items.forEach((item, index) => {
+                    if (index >= 2) {
+                        item.style.display = "none";
+                    }
+                });
+                br_items.forEach((br, index) => {
+                    if (index >= 2) {
+                        br.style.display = "none"; 
+                    }
+                });
+                dropdown.dataset.expanded = "false";
+                [icon1, icon2].forEach(icon => {
+                    icon.classList.remove('fa-angle-double-up');
+                    icon.classList.add('fa-angle-double-down');
+                });
+                text.textContent = " Show more";
             }
         }
     </script>

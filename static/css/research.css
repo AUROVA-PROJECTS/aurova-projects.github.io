@@ -1,4 +1,5 @@
 .research_container {
+    scroll-margin-top: 40px;
     border: 1px solid rgb(199, 209, 253);
     padding: 20px;
     margin-bottom: 20px;
@@ -55,7 +56,7 @@
 }
   
 .dropdown_content {
-    display: none;
+    display: block;
     margin-top: 10px;
 }
 
@@ -91,4 +92,49 @@
   .publication_block a:hover::after{ 
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  .research_menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    width: 50%;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: normal;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .research_menu a {
+    display: inline-flex;
+    position: relative;
+    color: #000000;
+    transition: background-color 0.25s ease-out;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the pseudo-element stays within the link */
+    z-index: 1;
+  }
+
+  .research_menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0; /* Start from the right */
+    width: 100%; /* Initially covers the entire width */
+    height: 100%;
+    background-color: rgb(199, 209, 253); /* Background color for hover effect */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: bottom right; /* Start the animation from the right */
+    transition: transform 0.35s ease-out;
+    z-index: -1; /* Ensure it appears behind the text */
+  }
+
+  .research_menu a:hover::before {
+    transform: scaleX(1); /* Expands the background color from right to left */
+    transform-origin: bottom left; /* Ends the animation on the left */
   }

@@ -37,3 +37,22 @@
     height: 30%;
     margin: auto;
 }
+
+/* Responsive: On mobile, switch to one column */
+@media (max-width: 768px) {
+    .project_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project_text {
+        flex: none;
+        width: 90%; /* Make them take most of the width */
+    }
+
+    .project_image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

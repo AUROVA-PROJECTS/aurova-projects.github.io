@@ -138,3 +138,30 @@
     transform: scaleX(1); /* Expands the background color from right to left */
     transform-origin: bottom left; /* Ends the animation on the left */
   }
+
+  /* Responsive: On mobile, switch to one column */
+@media (max-width: 768px) {
+  .research_menu {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .research_block{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .research_text {
+      flex: none;
+      width: 90%; /* Make them take most of the width */
+  }
+
+  .research_image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+  }
+}

@@ -118,6 +118,9 @@
     border-radius: 8px;
     overflow: hidden; /* Ensures the pseudo-element stays within the link */
     z-index: 1;
+    border: 3px solid rgb(199, 209, 253); /* Added border */
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .research_menu a::before {

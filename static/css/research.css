@@ -149,6 +149,9 @@
       align-items: center;
       width: 100%;
   }
+  .research_menu a{
+    margin-bottom: 5px;
+}
 
   .research_block{
       flex-direction: column;
